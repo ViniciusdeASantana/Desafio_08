@@ -31,7 +31,7 @@
 }
 
 .banner {
-    background: linear-gradient(#121214BF) , url(img/09b1a20191a57e504bf41c599dbaca80.png) top center/ cover no-repeat;
+    background: linear-gradient(#121214BF) , url(../img/09b1a20191a57e504bf41c599dbaca80.png) top center/ cover no-repeat;
 
     width: 100%;
     padding: 95px 0px;
