@@ -39,6 +39,7 @@
     background: linear-gradient(#121214BF) , url(../img/09b1a20191a57e504bf41c599dbaca80.png) top center/ cover no-repeat;
 
     width: 100%;
+    max-width: 100%;
     padding: 91px 0px;
 }
 
@@ -177,11 +178,11 @@
     gap: 40px 32px;
 
     @media(min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     @media(min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -189,6 +190,12 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.card-shoes__image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 
