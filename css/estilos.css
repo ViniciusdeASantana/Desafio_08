@@ -15,18 +15,23 @@
     padding: 0px 24px;
 
     @media(min-width: 768px) {
-        padding: 0px 40px;
+        padding: 0px 32px;
       }
 }
 
 .header__paragraph {
     font-family: "archivo";
-    font-size: 24px;
-    padding: 19px 0px;
+    font-size: 14px;
+    padding: 12px 0px;
     text-align: center;
 
-    @media(max-width:320px) {
-        font-size: 20px;
+    @media(min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media(min-width: 1024px) {
+        font-size: 24px;
+        padding: 19px 0px;
     }
 }
 
@@ -34,7 +39,7 @@
     background: linear-gradient(#121214BF) , url(../img/09b1a20191a57e504bf41c599dbaca80.png) top center/ cover no-repeat;
 
     width: 100%;
-    padding: 95px 0px;
+    padding: 91px 0px;
 }
 
 .conteiner__banner-paragraph {
@@ -52,12 +57,12 @@
 }
 
 .logo__bg {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
 
-    @media(max-width:1024px) {
-        width: 19.2px;
-        height: 17.9px;
+    @media(min-width: 1024px) {
+        width: 48px;
+        height: 48px;
     }
 }
 
@@ -65,43 +70,49 @@
     color: white;
     font-family: "archivo";
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
 
-    @media(max-width:1024px) {
-        font-size: 18px;
+    @media(min-width: 1024px) {
+        font-size: 24px;
     }
+
 }
 
 .content_text {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
+
+    @media(min-width: 1024px) {
+        gap: 20px;
+    }
 }
 
 .title__bg {
     color: white;
     font-family: "archivo";
     font-weight: 500;
-    font-size: 32px;
-
-    @media(max-width:1024px) {
-        font-size: 24px;
+    font-size: 24px;
+    
+    @media(min-width: 1024px) {
+        font-size: 32px;
     }
+
 }
 
 .paragraph__bg-2 {
     color: white;
     font-family: "archivo";
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 140%;
 
-    @media(max-width:1024px) {
+    @media(min-width: 768px) {
         font-size: 18px;
     }
-
-    @media(max-width:768px) {
-        font-size: 16px;
+    
+    @media(min-width: 1024px) {
+        font-size: 24px;
     }
 }
 
@@ -109,8 +120,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0px;
-    gap: 72px;
+    padding: 56px 0px;
+    gap: 40px;
+
+    @media(min-width: 1024px) {
+        padding: 80px 0px;
+        gap: 72px;
+    }
 }
 
 .content-shoes-text {
@@ -118,46 +134,54 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 24px;
+    gap: 12px;
+
+    @media(min-width: 1024px) {
+        gap: 24px;
+    }
 }
 
 .content-shoes-text__title {
     font-family: "archivo";
     font-weight: 600;
-    font-size: 32px;
+    font-size: 20px;
 
-    @media(max-width:1024px) {
+    @media(min-width: 768px) {
         font-size: 24px;
     }
-
-    @media(max-width:768px) {
-        font-size: 20px;
+    
+    @media(min-width: 1024px) {
+        font-size: 32px;
     }
 }
 
 .content-shoes-text__paragraph {
     font-family: "archivo";
     font-weight: 400;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 140%;
 
-    @media(max-width:1024px) {
-        font-size: 18px;
+    @media(min-width: 768px) {
+        font-size: 16px;
     }
 
-    @media(max-width:768px) {
-        font-size: 14px;
+    @media(min-width: 1024px) {
+        font-size: 24px;
     }
+    
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    column-gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px 32px;
 
-    @media(max-width:1280px) {
-        justify-content: center;
+    @media(min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media(min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -173,9 +197,7 @@
     flex-direction: column;
     gap: 12px;
 
-    @media(max-width:375px) {
-        text-align: center;
-    }
+    
 }
 
 .card-shoes-content__title {
@@ -196,7 +218,5 @@
     font-weight: 500;
     font-size: 20px;
 
-    @media(max-width:375px) {
-        text-align: center;
-    }
+    
 }
